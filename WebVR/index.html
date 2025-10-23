@@ -4,12 +4,70 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="1 8 -3" rotation="30 50 78" width="1" height="1" depth="1" color="#d466cc"></a-box>
-      <a-box position="1 .27 -3" rotation="0 0 0" width="1" height=".5" depth="1" color="#9c3a71"></a-box>
-      <a-sphere position="5 8 3" radius=".55" color="#edab1c"></a-sphere>
-      <a-cylinder position="1 3.5 -3" radius="0.25" height="7" color="#7b879e"></a-cylinder>
-      <a-plane position="1 0 -3" rotation="-90 0 0" width="4" height="4" color="#678c4a"></a-plane>
-      <a-sky color="#8a797c"></a-sky>
+      <a-box position="-6 8 -6" rotation="30 50 78" width="1" height="1" depth="1" color="#d466cc"></a-box>
+      <a-box position="-6 .27 -6" rotation="0 0 0" width="1" height=".5" depth="1" color="#9c3a71"></a-box>
+      <a-sphere position="5 8 -7" radius=".55" color="#edab1c"></a-sphere>
+      <a-cylinder src="#Smooth" position="-6 3.5 -6" radius="0.25" height="7" color="#7b879e"></a-cylinder>
+      <a-plane src="#Dirt" repeat="1.5 1.5" position="-6 0 -6" rotation="-90 0 0" width="4" height="4"></a-plane>
+    
+    <a-entity position="5, 0, 6.5" scale="2, 2, 2"> 
+      <a-box src="#Bark" position="0, 0, 0" scale=".25, 1, .25" color="#7D6A49"></a-box>
+      <a-box src="#Leaf" repeat="2.5 2.5" position="0, 1, 0" scale="1, 1.2, 1" color="#5B7D49"></a-box>
+      </a-entity>
+    <a-entity position="-5, 0, -3" scale="2, 2, 2"> 
+      <a-box src="#Bark" position="0, 0, 0" scale=".25, 1, .25" color="#7D6A49"></a-box>
+      <a-box src="#Leaf" repeat="2.5 2.5" position="0, 1, 0" scale="1, 1.2, 1" color="#5B7D49"></a-box>
+      </a-entity>
+    <a-entity position="-4.4, 0, 3.5" scale="2, 2, 2"> 
+      <a-box src="#Bark" position="0, 0, 0" scale=".25, 1, .25" color="#7D6A49"></a-box>
+      <a-box src="#Leaf" repeat="2.5 2.5" position="0, 1, 0" scale="1, 1.2, 1" color="#5B7D49"></a-box>
+      </a-entity>
+    <a-entity position="-5.3, 0, 8" scale="2, 2, 2"> 
+      <a-box src="#Bark" position="0, 0, 0" scale=".25, 1, .25" color="#7D6A49"></a-box>
+      <a-box src="#Leaf" repeat="2.5 2.5" position="0, 1, 0" scale="1, 1.2, 1" color="#5B7D49"></a-box>
+      </a-entity>
+    <a-entity position="4.2, 0, 2" scale="2, 2, 2"> 
+      <a-box src="#Bark" position="0, 0, 0" scale=".25, 1, .25" color="#7D6A49"></a-box>
+      <a-box src="#Leaf" repeat="2.5 2.5" position="0, 1, 0" scale="1, 1.2, 1" color="#5B7D49"></a-box>
+      </a-entity>
+    <a-entity position="3, 0, -2" scale="2, 2, 2"> 
+      <a-box src="#Bark" position="0, 0, 0" scale=".25, 1, .25" color="#7D6A49"></a-box>
+      <a-box src="#Leaf" repeat="2.5 2.5" position="0, 1, 0" scale="1, 1.2, 1" color="#5B7D49"></a-box>
+      </a-entity>
+
+      <a-assets>
+         <img id="Stone" src="images/stone.png">
+         <img id="Bark" src="images/bark.png">
+         <img id="Grass" src="images/grass1.png">
+         <img id="Leaf" src="images/leaf.png">
+         <img id="Dirt" src="images/dirt.png">
+         <img id="Smooth" src="images/smooth.png">
+         <img id="Lake" src="images/lake.jpg">
+      </a-assets>
+
+      <a-cylinder src="#Stone" position="4, -2, 4" repeat="2 2" height="3" radius="1.5"></a-cylinder>
+      <a-cone position="7, -2, 7" color="tomato" radius-bottom="2" radius-top="0.5"></a-cone>
+      <a-plane src="#Grass" position="4, -4, 4" repeat="30 30" rotation="-90 0 0" color="green" width="99" height="99"></a-plane>
+     
+    <a-entity position="0, 0, 6" scale="1, 1, 1" rotation="0 180 0">
+      <a-sphere position="0 .3 0" radius=".8" color="#FFFFFF"></a-sphere>
+       <a-box position="0 -.6 0" rotation="0 0 0" width="1" height="1" depth=".6" color="#FFFFFF"></a-box>
+       <a-sphere position="-.3 .3 .6" radius=".25" color="#040404"></a-sphere>
+       <a-sphere position=".3 .3 .6" radius=".25" color="#040404"></a-sphere>
+       <a-box position="-.2 -.6 .3" rotation="0 0 0" width=".1" height="1" depth=".1" color="#040404"></a-box>
+       <a-box position=".2 -.6 .3" rotation="0 0 0" width=".1" height="1" depth=".1" color="#040404"></a-box>
+       <a-box position="0 .03 .78" rotation="0 0 45" width=".2" height=".2" depth=".1" color="#040404"></a-box>
+        <a-box position="0 -.7 .3" rotation="0 0 90" width=".1" height="1.01" depth=".1" color="#040404"></a-box>
+        <a-cylinder position="0 .7 0" radius="1.3" height=".1" color="#E6B743"></a-cylinder>
+       <a-sphere position="0 .8 0" radius=".75" color="#E6B743"></a-sphere>
+       <a-cylinder position="0 .8 0" radius=".8" height=".1" color="#FC0000"></a-cylinder>
+    </a-entity>
+
+    <a-entity camera look-controls position="0 1.6 0">
+     <a-cursor color="red"></a-cursor>
+    </a-entity>
+
+     <a-sky src="#Lake"></a-sky>
     </a-scene>
   </body>
 </html>
